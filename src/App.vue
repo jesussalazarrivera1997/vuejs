@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <cabecera nombrealumno="Jesus Salazar Rivera"></cabecera>
+    <contenido>
+       
+    </contenido>
+    <pie nombrealu="Jesus Salazar Rivera"></pie>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import contenido from "./components/trabajo1.vue";
+import pie from "./components/trabajo2.vue";
+import cabecera from "./components/trabajo3"
 export default {
-  name: 'app',
+  name: "app",
+  
+  data: function() {
+    return {
+  };
+  },
   components: {
-    HelloWorld
-  }
-}
+    contenido,
+    pie,
+    cabecera
+  },
+  props: {
+  },
+  methods: {}
+};
+
 </script>
 
 <style>
+body {
+  background-color: black;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  text-align: left;
+  color: aliceblue;
   margin-top: 60px;
 }
 </style>
